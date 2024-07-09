@@ -1,0 +1,43 @@
+/*! Customize The Theme */
+:root {
+  --bs-primary-rgb: 58, 73, 123;
+}
+/*! Global Rules */
+body {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 1.5px;
+  background: url(../imgs/noise.png) 0 0 / 200px 200px;
+}
+/*! Navbar */
+.navbar-brand img {
+  max-width: 40px;
+}
+/*! Games */
+.card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card .card-img-top {
+  filter: grayscale(0.7);
+  transition: 0.5s 0.1s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card:hover .card-img-top {
+  filter: grayscale(0);
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #fff #0000;
+  animation: l1 1s infinite;
+  transform: translate(-50%,-50%);
+}
+@keyframes l1 {to{transform: translate(-50%,-50%) rotate(.5turn)}}
+/*! Game Details */
+#close {
+  cursor: pointer;
+}
